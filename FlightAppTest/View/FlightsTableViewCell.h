@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  FlightsTableViewCell.h
 //  FlightAppTest
 //
 //  Created by Dario Carlomagno on 12/09/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface FlightsTableViewCell : UITableViewCell
 
 @end
-

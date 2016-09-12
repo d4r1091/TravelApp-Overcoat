@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		2C2F84401D8759EB000D7518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F843F1D8759EB000D7518 /* main.m */; };
 		2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84421D8759EB000D7518 /* AppDelegate.m */; };
-		2C2F84461D8759EB000D7518 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84451D8759EB000D7518 /* ViewController.m */; };
 		2C2F84491D8759EB000D7518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F84471D8759EB000D7518 /* Main.storyboard */; };
 		2C2F844B1D8759EB000D7518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F844A1D8759EB000D7518 /* Assets.xcassets */; };
 		2C2F844E1D8759EB000D7518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F844C1D8759EB000D7518 /* LaunchScreen.storyboard */; };
 		2C2F84591D8759EC000D7518 /* FlightAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84581D8759EC000D7518 /* FlightAppTestTests.m */; };
+		2C2F846D1D875B78000D7518 /* FlightsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84681D875B78000D7518 /* FlightsTableViewController.m */; };
+		2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,8 +32,6 @@
 		2C2F843F1D8759EB000D7518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C2F84411D8759EB000D7518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C2F84421D8759EB000D7518 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C2F84441D8759EB000D7518 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2C2F84451D8759EB000D7518 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2C2F84481D8759EB000D7518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F844A1D8759EB000D7518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F844D1D8759EB000D7518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +39,10 @@
 		2C2F84541D8759EC000D7518 /* FlightAppTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAppTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F84581D8759EC000D7518 /* FlightAppTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightAppTestTests.m; sourceTree = "<group>"; };
 		2C2F845A1D8759EC000D7518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2F84671D875B78000D7518 /* FlightsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsTableViewController.h; sourceTree = "<group>"; };
+		2C2F84681D875B78000D7518 /* FlightsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsTableViewController.m; sourceTree = "<group>"; };
+		2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsTableViewCell.h; sourceTree = "<group>"; };
+		2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +86,10 @@
 			children = (
 				2C2F84411D8759EB000D7518 /* AppDelegate.h */,
 				2C2F84421D8759EB000D7518 /* AppDelegate.m */,
-				2C2F84441D8759EB000D7518 /* ViewController.h */,
-				2C2F84451D8759EB000D7518 /* ViewController.m */,
+				2C2F84661D875B78000D7518 /* View */,
+				2C2F84691D875B78000D7518 /* Services */,
+				2C2F846B1D875B78000D7518 /* Model */,
+				2C2F846C1D875B78000D7518 /* Controller */,
 				2C2F84471D8759EB000D7518 /* Main.storyboard */,
 				2C2F844A1D8759EB000D7518 /* Assets.xcassets */,
 				2C2F844C1D8759EB000D7518 /* LaunchScreen.storyboard */,
@@ -109,6 +114,46 @@
 				2C2F845A1D8759EC000D7518 /* Info.plist */,
 			);
 			path = FlightAppTestTests;
+			sourceTree = "<group>";
+		};
+		2C2F84661D875B78000D7518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F84671D875B78000D7518 /* FlightsTableViewController.h */,
+				2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */,
+				2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */,
+				2C2F84681D875B78000D7518 /* FlightsTableViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C2F84691D875B78000D7518 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F846A1D875B78000D7518 /* Model */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2C2F846A1D875B78000D7518 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2F846B1D875B78000D7518 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2F846C1D875B78000D7518 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,8 +256,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F84461D8759EB000D7518 /* ViewController.m in Sources */,
 				2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */,
+				2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */,
+				2C2F846D1D875B78000D7518 /* FlightsTableViewController.m in Sources */,
 				2C2F84401D8759EB000D7518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
