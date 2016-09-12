@@ -10,6 +10,7 @@ PODS:
     - Mantle/extobjc (= 2.0.7)
   - Mantle/extobjc (2.0.7)
   - MBProgressHUD (1.0.0)
+  - MTCardLayout (1.0.3)
   - Overcoat (4.0.0-beta.2):
     - AFNetworking/NSURLSession (~> 3.0)
     - AFNetworking/Serialization (~> 3.0)
@@ -20,6 +21,7 @@ PODS:
 
 DEPENDENCIES:
   - MBProgressHUD (from `https://github.com/jdg/MBProgressHUD.git`)
+  - MTCardLayout
   - Overcoat (~> 4.0.0-beta.1)
   - SDWebImage (~> 3.8)
 
@@ -36,9 +38,10 @@ SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MTCardLayout: 3baf5ac3bd21e6149b561dd7bca708f1ceccf962
   Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
-PODFILE CHECKSUM: 333a93cd2464ee05c7fddb6bb4d2836630192c1a
+PODFILE CHECKSUM: 03464e84feedb003e639657a1e54155e44fff533
 
 COCOAPODS: 1.0.1
