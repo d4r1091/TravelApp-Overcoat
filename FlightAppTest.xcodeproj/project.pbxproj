@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0C9A441D87EAE000B6D2BB /* HotelModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */; };
+		2C0C9A451D87EAE000B6D2BB /* FlightModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */; };
+		2C0C9A4B1D87EEDC00B6D2BB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */; };
 		2C2F84401D8759EB000D7518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F843F1D8759EB000D7518 /* main.m */; };
 		2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84421D8759EB000D7518 /* AppDelegate.m */; };
 		2C2F84491D8759EB000D7518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F84471D8759EB000D7518 /* Main.storyboard */; };
@@ -19,6 +22,7 @@
 		2CC132121D889A6400B62672 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132111D889A6400B62672 /* Hotel.m */; };
 		2CC132151D889A6E00B62672 /* FlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132141D889A6E00B62672 /* FlightsController.m */; };
 		2CC132181D889A7600B62672 /* HotelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132171D889A7600B62672 /* HotelsController.m */; };
+		2CC132001D88959300B62672 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC131FF1D88959300B62672 /* APIClient.m */; };
 		2EBDC3B5C9FE4363CB5DE525 /* Pods_FlightAppTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */; };
 		3CEDFE9A01F04BD557DABA8E /* Pods_FlightAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,12 @@
 /* Begin PBXFileReference section */
 		03AED62710A651BCCDF55985 /* Pods-FlightAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest.debug.xcconfig"; sourceTree = "<group>"; };
 		1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightAppTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelModelMapper.m; sourceTree = "<group>"; };
+		2C0C9A411D87EAE000B6D2BB /* HotelModelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelModelMapper.h; sourceTree = "<group>"; };
+		2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightModelMapper.m; sourceTree = "<group>"; };
+		2C0C9A431D87EAE000B6D2BB /* FlightModelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightModelMapper.h; sourceTree = "<group>"; };
+		2C0C9A491D87EEDC00B6D2BB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2C2F843B1D8759EB000D7518 /* FlightAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F843F1D8759EB000D7518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C2F84411D8759EB000D7518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +69,8 @@
 		2CC132141D889A6E00B62672 /* FlightsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlightsController.m; path = FlightAppTest/Model/FlightsController.m; sourceTree = SOURCE_ROOT; };
 		2CC132161D889A7600B62672 /* HotelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelsController.h; path = FlightAppTest/Model/HotelsController.h; sourceTree = SOURCE_ROOT; };
 		2CC132171D889A7600B62672 /* HotelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelsController.m; path = FlightAppTest/Model/HotelsController.m; sourceTree = SOURCE_ROOT; };
+		2CC131FE1D88959300B62672 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		2CC131FF1D88959300B62672 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
 		329C48E74D0714F4451FDF7C /* Pods-FlightAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest.release.xcconfig"; sourceTree = "<group>"; };
 		626939BA05DC8876769C5B7C /* Pods-FlightAppTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTestTests/Pods-FlightAppTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -155,6 +167,10 @@
 			isa = PBXGroup;
 			children = (
 				2C2F846A1D875B78000D7518 /* Model */,
+				2C0C9A491D87EEDC00B6D2BB /* Constants.h */,
+				2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */,
+				2CC131FE1D88959300B62672 /* APIClient.h */,
+				2CC131FF1D88959300B62672 /* APIClient.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -162,6 +178,10 @@
 		2C2F846A1D875B78000D7518 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */,
+				2C0C9A411D87EAE000B6D2BB /* HotelModelMapper.h */,
+				2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */,
+				2C0C9A431D87EAE000B6D2BB /* FlightModelMapper.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -412,8 +432,12 @@
 				2CC132121D889A6400B62672 /* Hotel.m in Sources */,
 				2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */,
 				2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */,
+				2C0C9A4B1D87EEDC00B6D2BB /* Constants.m in Sources */,
+				2CC132001D88959300B62672 /* APIClient.m in Sources */,
 				2C2F846D1D875B78000D7518 /* FlightsTableViewController.m in Sources */,
 				2CC1320F1D889A5F00B62672 /* Flight.m in Sources */,
+				2C0C9A441D87EAE000B6D2BB /* HotelModelMapper.m in Sources */,
+				2C0C9A451D87EAE000B6D2BB /* FlightModelMapper.m in Sources */,
 				2C2F84401D8759EB000D7518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
