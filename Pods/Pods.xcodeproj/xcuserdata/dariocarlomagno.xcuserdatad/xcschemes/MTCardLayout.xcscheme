@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'A473EC788E90EF9BDA31C6800EF33CB3'
-               BlueprintName = 'SDWebImage'
+               BlueprintIdentifier = '602FFDE30BC6F403265812606D30497C'
+               BlueprintName = 'MTCardLayout'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'SDWebImage.framework'>
+               BuildableName = 'MTCardLayout.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
