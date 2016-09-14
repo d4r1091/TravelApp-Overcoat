@@ -10,4 +10,6 @@
 
 @interface HotelsController : NSObject
 
++ (void)getHotelsWithCompletionBlock:(void (^)(BOOL success, NSArray *flights, NSError *error))completionBlock;
+
 @end

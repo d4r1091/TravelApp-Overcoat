@@ -10,4 +10,6 @@
 
 @interface FlightsController : NSObject
 
++ (void)getFlightsWithCompletionBlock:(void (^)(BOOL success, NSArray *flights, NSError *error))completionBlock;
+
 @end
