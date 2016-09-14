@@ -8,6 +8,22 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FlightsTableViewCell : UITableViewCell
+@class FlightsTableViewCell;
+@protocol FlightsTableViewCellProtocol <NSObject>
+
+- (void)userDidClickedCloseButton:(FlightsTableViewCell *)cell;
+
+@end
+
+@interface FlightsTableViewCell : UICollectionViewCell
+
+@property (nonatomic, strong) id<FlightsTableViewCellProtocol> delegate;
+
+- (void)bindDataWithAirlane:(NSString *) airlane
+              departureDate:(NSDate *)departure
+                    arrival:(NSDate *)arrival
+                      price:(NSUInteger)price
+           departureAirport:(NSString *)departureAirport
+             arrivalAirport:(NSString *)arrivalAirport;
 
 @end
