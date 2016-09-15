@@ -9,7 +9,6 @@ target 'FlightAppTest' do
     pod 'Overcoat', '~> 4.0.0-beta.1'
     pod 'MBProgressHUD', :git => 'https://github.com/jdg/MBProgressHUD.git'
     pod 'SDWebImage', '~>3.8'
-    pod 'MTCardLayout'
     
     target 'FlightAppTestTests' do
         inherit! :search_paths
