@@ -50,16 +50,27 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _items.count;
+    return _items.count?_items.count:1;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hotelCellIdentifier" forIndexPath:indexPath];
-    // Configure the cell...
-    Hotel *anHotel = _items[indexPath.row];
-    cell.textLabel.text = anHotel.name;
-    return cell;
+    if (_items.count) {
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"hotelCellIdentifier" forIndexPath:indexPath];
+        // Configure the cell...
+        Hotel *anHotel = _items[indexPath.row];
+        cell.textLabel.text = anHotel.name;
+        return cell;
+    } else {
+        static NSString *noNotificationsCellIdentifier = @"Cell";
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:noNotificationsCellIdentifier];
+        if (!cell) {
+            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:noNotificationsCellIdentifier];
+        }
+        cell.textLabel.textAlignment = NSTextAlignmentCenter;
+        cell.textLabel.text = @"there are no offerts available right now";
+        cell.userInteractionEnabled = NO;
+        return cell;
+    }
 }
 
 - (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath {

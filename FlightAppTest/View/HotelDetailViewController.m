@@ -71,7 +71,7 @@
                                              _self.imagesArray = [NSMutableArray array];
                                          }
                                          [_self.imagesArray addObject:image];
-                                         if (index == _hotel.images.count) {
+                                         if (index == _hotel.images.count-1) {
                                              [_self.imagesContainterSwipeView reloadData];
                                              [MBProgressHUD hideHUDForView:_self.view animated:YES];
                                          }
@@ -134,4 +134,9 @@
 {
     return _imagesContainterSwipeView.bounds.size;
 }
+
+- (void)swipeViewCurrentItemIndexDidChange:(SwipeView *)swipeView {
+    _pageControl.currentPage = swipeView.currentPage;
+}
+
 @end
