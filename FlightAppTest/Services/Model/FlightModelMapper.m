@@ -64,7 +64,7 @@
 }
 
 + (NSValueTransformer *)flightsJSONTransformer {
-    return [NSValueTransformer mtl_JSONArrayTransformerWithModelClass:[FlightModelMapper class]];
+    return [MTLJSONAdapter arrayTransformerWithModelClass:[FlightModelMapper class]];
 }
 
 - (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue
