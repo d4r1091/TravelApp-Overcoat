@@ -8,6 +8,7 @@
 
 #import "Constants.h"
 
-NSString* const BaseURL = @"http://pastebin.com/";
-NSString* const FlightsEndPoint = @"raw/bFnZQEx0";
-NSString* const HotelsEndPoint = @"raw/f0Tm6bfy";
+
+NSString* const BaseURL = @"https://api.myjson.com/";
+NSString* const FlightsEndPoint = @"bins/2gqx6";
+NSString* const HotelsEndPoint = @"bins/may2";

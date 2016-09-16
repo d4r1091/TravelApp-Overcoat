@@ -31,9 +31,8 @@
 }
 
 - (void)getFlightsWithCompletionBlock:(void (^)(BOOL, NSArray *, NSError *))completionBlock {
-    self.responseSerializer = [AFHTTPResponseSerializer serializer];
-    [self GET:FlightsEndPoint parameters:@{} completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
-        NSArray *flights = response.result;
+    [self GET:FlightsEndPoint parameters:nil completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
+        NSArray *flights = ((FlightsModelMapper *)response.result).flights;
         completionBlock(error==nil, flights, error);
     }];
 }
@@ -47,14 +46,9 @@
 
 + (NSDictionary *)modelClassesByResourcePath {
     return @{
-             FlightsEndPoint: [FlightModelMapper class],
+             FlightsEndPoint: [FlightsModelMapper class],
              HotelsEndPoint: [HotelModelMapper class]
              };
 }
-
-+ (NSDictionary<NSString *,id> *)responseClassesByResourcePath {
-    return @{FlightsEndPoint: [FlightsResponse class]};
-}
-
 
 @end

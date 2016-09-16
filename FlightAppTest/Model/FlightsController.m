@@ -15,7 +15,6 @@
 
 + (void)getFlightsWithCompletionBlock:(void (^)(BOOL, NSArray *, NSError *))completionBlock {
     [[APIClient sharedInstance] getFlightsWithCompletionBlock:^(BOOL success, NSArray *flights, NSError *error) {
-        
         NSMutableArray *flightsObj = [NSMutableArray array];
         if (success) {
             for (FlightModelMapper *aFlight in flights) {
