@@ -23,6 +23,10 @@
 		2CB36F9E1D8AE6060034B54C /* MTDraggableCardLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F961D8AE6060034B54C /* MTDraggableCardLayoutHelper.m */; };
 		2CB36F9F1D8AE6060034B54C /* UICollectionView+CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F981D8AE6060034B54C /* UICollectionView+CardLayout.m */; };
 		2CB36FA01D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */; };
+		2CB36FA21D8AE9700034B54C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA11D8AE9700034B54C /* QuartzCore.framework */; };
+		2CB36FA41D8AE9740034B54C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA31D8AE9740034B54C /* UIKit.framework */; };
+		2CB36FA61D8AE9810034B54C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */; };
+		2CB36FA81D8AE9930034B54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA71D8AE9930034B54C /* Foundation.framework */; };
 		2CBD7D851D89FDCE005C7F50 /* FlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */; };
 		2CC132001D88959300B62672 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC131FF1D88959300B62672 /* APIClient.m */; };
 		2CC1320F1D889A5F00B62672 /* Flight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1320E1D889A5F00B62672 /* Flight.m */; };
@@ -79,6 +83,10 @@
 		2CB36F981D8AE6060034B54C /* UICollectionView+CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CardLayout.m"; sourceTree = "<group>"; };
 		2CB36F991D8AE6060034B54C /* UICollectionView+DraggableCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DraggableCardLayout.h"; sourceTree = "<group>"; };
 		2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DraggableCardLayout.m"; sourceTree = "<group>"; };
+		2CB36FA11D8AE9700034B54C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CB36FA31D8AE9740034B54C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CB36FA71D8AE9930034B54C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsViewController.h; sourceTree = "<group>"; };
 		2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsViewController.m; sourceTree = "<group>"; };
 		2CC131FE1D88959300B62672 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
@@ -102,6 +110,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB36FA81D8AE9930034B54C /* Foundation.framework in Frameworks */,
+				2CB36FA61D8AE9810034B54C /* CoreGraphics.framework in Frameworks */,
+				2CB36FA41D8AE9740034B54C /* UIKit.framework in Frameworks */,
+				2CB36FA21D8AE9700034B54C /* QuartzCore.framework in Frameworks */,
 				3CEDFE9A01F04BD557DABA8E /* Pods_FlightAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +273,10 @@
 		62A17A2CD4CEDD1A44938A7D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2CB36FA71D8AE9930034B54C /* Foundation.framework */,
+				2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */,
+				2CB36FA31D8AE9740034B54C /* UIKit.framework */,
+				2CB36FA11D8AE9700034B54C /* QuartzCore.framework */,
 				926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */,
 				1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */,
 			);

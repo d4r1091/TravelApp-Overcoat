@@ -7,6 +7,7 @@
 //
 
 #import <Mantle/Mantle.h>
+#import <Overcoat/OVCResponse.h>
 
 /* Serializing this model
  {
@@ -30,8 +31,6 @@
 
 @end
 
-@interface FlightsModelMapper : MTLModel <MTLJSONSerializing>
-
-@property (nonatomic, readonly, strong) NSArray<FlightModelMapper *> *flights;
+@interface FlightsResponse : OVCResponse
 
 @end

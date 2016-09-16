@@ -29,7 +29,6 @@
             }
         }
         completionBlock(success, flightsObj, error);
-        
     }];
 }
 

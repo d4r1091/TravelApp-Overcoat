@@ -53,27 +53,10 @@
 
 @end
 
+@implementation  FlightsResponse
 
-@implementation FlightsModelMapper
-
-
-
-+ (NSDictionary *)JSONKeyPathsByPropertyKey {
-    return @{
-             @"flights": @"flights"
-             };
++ (NSString *)resultKeyPathForJSONDictionary:(NSDictionary *)JSONDictionary {
+    return @"flights";
 }
-
-+ (NSValueTransformer *)flightsTransformer {
-    return [MTLJSONAdapter arrayTransformerWithModelClass:[FlightModelMapper class]];
-}
-
-- (instancetype)initWithDictionary:(NSDictionary *)dictionaryValue
-                             error:(NSError **)error {
-    self = [super initWithDictionary:dictionaryValue error:error];
-    if (self == nil) return nil;
-    return self;
-}
-
 
 @end
