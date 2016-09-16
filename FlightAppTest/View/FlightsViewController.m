@@ -16,8 +16,9 @@
 #import "UICollectionView+DraggableCardLayout.h"
 #import "MTCardLayoutHelper.h"
 #import "FlightsController.h"
+#import "Flight.h"
 
-@interface FlightsViewController () <UICollectionViewDataSource_Draggable, UICollectionViewDelegate_Draggable>
+@interface FlightsViewController () <UICollectionViewDataSource_Draggable, UICollectionViewDelegate_Draggable, FlightsTableViewCellProtocol>
 
 @property (nonatomic, strong) IBOutlet UICollectionView *collectionView;
 @property (nonatomic, strong) NSMutableArray * items;
@@ -34,11 +35,6 @@
 }
 
 #pragma mark - View Lifecycle
-
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
-    [_collectionView setViewMode:MTCardLayoutViewModePresenting animated:YES completion:nil];
-}
 
 - (void)viewDidLoad
 {
@@ -69,6 +65,14 @@
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     FlightsTableViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"flightCellIdentifier" forIndexPath:indexPath];
+    cell.delegate = self;
+    Flight *aFlight = _items[indexPath.row];
+    [cell bindDataWithAirlane:aFlight.airline
+                departureDate:aFlight.departureDate
+                      arrival:aFlight.arrivalDate 
+                        price:aFlight.price
+             departureAirport:aFlight.departureAirport
+               arrivalAirport:aFlight.arrivalAirport];
     return cell;
 }
 
@@ -107,4 +111,17 @@
 - (void)collectionView:(UICollectionView *)collectionView didDeleteItemAtIndexPath:(NSIndexPath *)indexPath
 {
 }
+
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
+{
+    [_collectionView setViewMode:MTCardLayoutViewModePresenting animated:YES completion:nil];
+}
+
+#pragma mark - FlightsTableViewCell Delegate
+
+- (void)userDidClickedCloseButton:(FlightsTableViewCell *)cell {
+    // do somenthing, eventually
+}
+
 @end

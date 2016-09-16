@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *price;
 @property (weak, nonatomic) IBOutlet UILabel *departureDate;
 
+- (IBAction)closeClicked:(id)sender;
+
 @end
 
 @implementation FlightsTableViewCell
@@ -89,6 +91,18 @@
     [dateFormatter setDateFormat:@"M/d/yy 'at' h:mma"];
     NSString *dateString = [dateFormatter stringFromDate:date];
     return dateString;
+}
+
+#pragma mark - UITableViewCell Actions
+
+- (void)closeClicked:(id)sender {
+    if (_delegate) {
+        // if you want to add some actions ViewController side
+        [_delegate userDidClickedCloseButton:self];
+    }
+    [self flipTransitionWithOptions:UIViewAnimationOptionTransitionFlipFromRight halfway:^(BOOL finished) {
+        // some stuffs
+    } completion:nil];
 }
 
 @end
