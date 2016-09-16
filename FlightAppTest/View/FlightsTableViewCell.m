@@ -100,9 +100,6 @@
         // if you want to add some actions ViewController side
         [_delegate userDidClickedCloseButton:self];
     }
-    [self flipTransitionWithOptions:UIViewAnimationOptionTransitionFlipFromRight halfway:^(BOOL finished) {
-        // some stuffs
-    } completion:nil];
 }
 
 @end

@@ -37,10 +37,10 @@
     }];
 }
 
-- (void)getHotelsWithCompletionBlock:(void (^)(BOOL, NSArray *, NSError *))completionBlock {
+- (void)getHotelsWithCompletionBlock:(void (^)(BOOL, HotelModelMapper *, NSError *))completionBlock {
     [self GET:HotelsEndPoint parameters:nil completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
-        NSArray *hotels = response.result;
-        completionBlock(error==nil, hotels, error);
+        HotelModelMapper *hotel = response.result;
+        completionBlock(error==nil, hotel, error);
     }];
 }
 

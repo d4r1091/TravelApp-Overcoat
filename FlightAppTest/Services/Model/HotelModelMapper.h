@@ -7,6 +7,7 @@
 //
 
 #import <Mantle/Mantle.h>
+#import <Overcoat/OVCResponse.h>
 
 /* Serializing this model
  {
@@ -32,7 +33,7 @@
 @property (nonatomic, readonly, copy) NSString *name;
 @property (nonatomic, readonly, copy) NSString *hotelLocation;
 @property (nonatomic, readonly, copy) NSString *hotelDescription;
-@property (nonatomic, readonly, strong) NSArray *images;
+@property (nonatomic, readonly, strong) NSArray<NSString*> *images;
 @property (nonatomic, assign, readonly) NSUInteger rating;
 @property (nonatomic, readonly, strong) NSArray *facilities;
 

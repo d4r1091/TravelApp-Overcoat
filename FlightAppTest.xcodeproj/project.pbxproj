@@ -27,6 +27,9 @@
 		2CB36FA41D8AE9740034B54C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA31D8AE9740034B54C /* UIKit.framework */; };
 		2CB36FA61D8AE9810034B54C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */; };
 		2CB36FA81D8AE9930034B54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA71D8AE9930034B54C /* Foundation.framework */; };
+		2CB36FAC1D8C22320034B54C /* HotelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */; };
+		2CB36FB41D8C5DDA0034B54C /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */; };
+		2CB5D2A61D8C739D00F99D7E /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5D2A51D8C739D00F99D7E /* SwipeView.m */; };
 		2CBD7D851D89FDCE005C7F50 /* FlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */; };
 		2CC132001D88959300B62672 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC131FF1D88959300B62672 /* APIClient.m */; };
 		2CC1320F1D889A5F00B62672 /* Flight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1320E1D889A5F00B62672 /* Flight.m */; };
@@ -87,6 +90,12 @@
 		2CB36FA31D8AE9740034B54C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2CB36FA71D8AE9930034B54C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CB36FAA1D8C22320034B54C /* HotelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsTableViewController.h; sourceTree = "<group>"; };
+		2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsTableViewController.m; sourceTree = "<group>"; };
+		2CB36FB21D8C5DDA0034B54C /* HotelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailViewController.h; sourceTree = "<group>"; };
+		2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
+		2CB5D2A41D8C739D00F99D7E /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		2CB5D2A51D8C739D00F99D7E /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
 		2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsViewController.h; sourceTree = "<group>"; };
 		2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsViewController.m; sourceTree = "<group>"; };
 		2CC131FE1D88959300B62672 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
@@ -188,10 +197,8 @@
 		2C2F84661D875B78000D7518 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */,
-				2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */,
-				2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */,
-				2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */,
+				2CB36FB01D8C25900034B54C /* Flights */,
+				2CB36FB11D8C25960034B54C /* Hotels */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -244,6 +251,7 @@
 		2CB36F8B1D8AE6060034B54C /* ExternalLibraries */ = {
 			isa = PBXGroup;
 			children = (
+				2CB5D2A31D8C739D00F99D7E /* SwipeView */,
 				2CB36F8C1D8AE6060034B54C /* MTCardLayout */,
 			);
 			path = ExternalLibraries;
@@ -268,6 +276,37 @@
 				2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */,
 			);
 			path = MTCardLayout;
+			sourceTree = "<group>";
+		};
+		2CB36FB01D8C25900034B54C /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */,
+				2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */,
+				2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */,
+				2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */,
+			);
+			name = Flights;
+			sourceTree = "<group>";
+		};
+		2CB36FB11D8C25960034B54C /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				2CB36FAA1D8C22320034B54C /* HotelsTableViewController.h */,
+				2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */,
+				2CB36FB21D8C5DDA0034B54C /* HotelDetailViewController.h */,
+				2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */,
+			);
+			name = Hotels;
+			sourceTree = "<group>";
+		};
+		2CB5D2A31D8C739D00F99D7E /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5D2A41D8C739D00F99D7E /* SwipeView.h */,
+				2CB5D2A51D8C739D00F99D7E /* SwipeView.m */,
+			);
+			path = SwipeView;
 			sourceTree = "<group>";
 		};
 		62A17A2CD4CEDD1A44938A7D /* Frameworks */ = {
@@ -495,15 +534,18 @@
 			files = (
 				2CC132181D889A7600B62672 /* HotelsController.m in Sources */,
 				2CC132151D889A6E00B62672 /* FlightsController.m in Sources */,
+				2CB36FAC1D8C22320034B54C /* HotelsTableViewController.m in Sources */,
 				2CC132121D889A6400B62672 /* Hotel.m in Sources */,
 				2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */,
 				2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */,
 				2CB36F9B1D8AE6060034B54C /* MTCardLayout.m in Sources */,
 				2CB36F9D1D8AE6060034B54C /* MTDraggableCardLayout.m in Sources */,
 				2CB36F9C1D8AE6060034B54C /* MTCardLayoutHelper.m in Sources */,
+				2CB5D2A61D8C739D00F99D7E /* SwipeView.m in Sources */,
 				2CB36FA01D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m in Sources */,
 				2CB36F9F1D8AE6060034B54C /* UICollectionView+CardLayout.m in Sources */,
 				2C0C9A4B1D87EEDC00B6D2BB /* Constants.m in Sources */,
+				2CB36FB41D8C5DDA0034B54C /* HotelDetailViewController.m in Sources */,
 				2CBD7D851D89FDCE005C7F50 /* FlightsViewController.m in Sources */,
 				2CB36F9E1D8AE6060034B54C /* MTDraggableCardLayoutHelper.m in Sources */,
 				2CC132001D88959300B62672 /* APIClient.m in Sources */,

@@ -27,23 +27,17 @@
 
 @implementation FlightsViewController
 
-#pragma mark Status Bar color
-
-- (UIStatusBarStyle)preferredStatusBarStyle
-{
-    return UIStatusBarStyleLightContent;
-}
-
 #pragma mark - View Lifecycle
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+    [self fetchFlights];
 }
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
+#pragma mark - View Helper Methods
+
+- (void)fetchFlights {
     __block FlightsViewController *_self = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [FlightsController getFlightsWithCompletionBlock:^(BOOL success, NSArray *flights, NSError *error) {
@@ -122,6 +116,7 @@
 
 - (void)userDidClickedCloseButton:(FlightsTableViewCell *)cell {
     // do somenthing, eventually
+    [_collectionView setViewMode:MTCardLayoutViewModeDefault animated:YES completion:nil];
 }
 
 @end

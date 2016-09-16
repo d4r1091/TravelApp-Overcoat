@@ -10,28 +10,34 @@
 #import "APIClient.h"
 #import "HotelModelMapper.h"
 #import "Hotel.h"
+#import "SDWebImageManager.h"
 
 @implementation HotelsController
 
-+ (void)getHotelsWithCompletionBlock:(void (^)(BOOL, NSArray *, NSError *))completionBlock {
-    [[APIClient sharedInstance] getHotelsWithCompletionBlock:^(BOOL success, NSArray *hotels, NSError *error) {
-        
-        NSMutableArray *hotelsObj = [NSMutableArray array];
-        if (success) {
-            for (HotelModelMapper *anHotel in hotels) {
-                Hotel *anHotelObj = [[Hotel alloc] initWithName:anHotel.name
-                                                  hotelLocation:anHotel.hotelLocation
-                                               hotelDescription:anHotel.hotelDescription
-                                                         images:anHotel.images
-                                                         rating:anHotel.rating
-                                                     facilities:anHotel.facilities];
-                
-                [hotelsObj addObject:anHotelObj];
-            }
-        }
-        completionBlock(success, hotelsObj, error);
-        
++ (void)getHotelsWithCompletionBlock:(void (^)(BOOL, Hotel *, NSError *))completionBlock {
+    [[APIClient sharedInstance] getHotelsWithCompletionBlock:^(BOOL success, HotelModelMapper *anHotel, NSError *error) {
+        Hotel *anHotelObj = [[Hotel alloc] initWithName:anHotel.name
+                                          hotelLocation:anHotel.hotelLocation
+                                       hotelDescription:anHotel.hotelDescription
+                                                 images:anHotel.images
+                                                 rating:anHotel.rating
+                                             facilities:anHotel.facilities];
+        completionBlock(success, anHotelObj, error);
     }];
+}
+
++ (void)getHotelImageWithUrlString:(NSString *)urlString completionBlock:(void (^)(BOOL, UIImage*, NSError *))completion {
+    SDWebImageManager *manager = [SDWebImageManager sharedManager];
+    [manager downloadImageWithURL:[NSURL URLWithString:urlString]
+                          options:0
+                         progress:^(NSInteger receivedSize, NSInteger expectedSize) {
+                             // progression tracking code
+                         }
+                        completed:^(UIImage *image, NSError *error, SDImageCacheType cacheType, BOOL finished, NSURL *imageURL) {
+                            if (image) {
+                                completion(finished, image, error);
+                            }
+                        }];
 }
 
 @end
