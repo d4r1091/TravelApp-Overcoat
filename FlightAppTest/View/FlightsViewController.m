@@ -17,6 +17,7 @@
 #import "MTCardLayoutHelper.h"
 #import "FlightsController.h"
 #import "Flight.h"
+#import "Utils.h"
 
 @interface FlightsViewController () <UICollectionViewDataSource_Draggable, UICollectionViewDelegate_Draggable, FlightsTableViewCellProtocol>
 
@@ -41,10 +42,13 @@
     __block FlightsViewController *_self = self;
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [FlightsController getFlightsWithCompletionBlock:^(BOOL success, NSArray *flights, NSError *error) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:_self.view animated:YES];
         if (!error) {
             _items = [NSMutableArray arrayWithArray:flights];
             [_self.collectionView reloadData];
+        } else {
+            [Utils showAlertOnViewController:_self
+                                 withMessage:error.localizedDescription];
         }
     }];
 }

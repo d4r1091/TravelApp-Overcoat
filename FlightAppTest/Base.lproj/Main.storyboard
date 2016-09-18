@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Flights-->
@@ -285,33 +284,46 @@
                                     <outlet property="delegate" destination="YGH-sY-Ge4" id="FoR-rY-CUU"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;hotel name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMv-I8-GOL">
-                                <rect key="frame" x="247" y="72" width="107" height="21"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="21" id="YcA-0J-gh8"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="wU3-qg-q0P"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="&lt;hotel description&gt;" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-Us-KWN">
+                            <textView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="&lt;hotel description&gt;" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iz0-Us-KWN">
                                 <rect key="frame" x="10" y="125" width="580" height="78"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;hotel location&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9m-6D-tG1">
-                                <rect key="frame" x="238" y="101" width="125" height="21"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlZ-PW-Toe">
+                                <rect key="frame" x="20" y="72" width="560" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;hotel location&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b9m-6D-tG1">
+                                        <rect key="frame" x="218" y="29" width="125" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="CBf-Uw-06V"/>
+                                            <constraint firstAttribute="height" constant="21" id="bCZ-db-HEf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="&lt;hotel name&gt;" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMv-I8-GOL">
+                                        <rect key="frame" x="227" y="0.0" width="107" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="YcA-0J-gh8"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="107" id="wU3-qg-q0P"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="125" id="CBf-Uw-06V"/>
-                                    <constraint firstAttribute="height" constant="21" id="bCZ-db-HEf"/>
+                                    <constraint firstItem="QMv-I8-GOL" firstAttribute="top" secondItem="KlZ-PW-Toe" secondAttribute="top" id="KCF-Ja-3gf"/>
+                                    <constraint firstItem="b9m-6D-tG1" firstAttribute="centerX" secondItem="KlZ-PW-Toe" secondAttribute="centerX" id="dqo-cS-y2t"/>
+                                    <constraint firstAttribute="height" constant="50" id="f2r-zp-OMN"/>
+                                    <constraint firstItem="QMv-I8-GOL" firstAttribute="centerX" secondItem="KlZ-PW-Toe" secondAttribute="centerX" id="lWm-ZZ-GFo"/>
+                                    <constraint firstItem="b9m-6D-tG1" firstAttribute="top" secondItem="QMv-I8-GOL" secondAttribute="bottom" constant="8" id="rDk-br-7B7"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAS-O5-X6j" customClass="SwipeView">
                                 <rect key="frame" x="170" y="210" width="260" height="180"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -343,18 +355,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="b9m-6D-tG1" firstAttribute="leading" relation="lessThanOrEqual" secondItem="JMJ-KB-DGa" secondAttribute="leadingMargin" constant="218" id="1KJ-bV-OYl"/>
-                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="b9m-6D-tG1" secondAttribute="trailing" constant="217" id="5t8-pf-TrK"/>
-                            <constraint firstItem="Iz0-Us-KWN" firstAttribute="top" secondItem="b9m-6D-tG1" secondAttribute="bottom" constant="3" id="9mX-QI-rcP"/>
-                            <constraint firstItem="b9m-6D-tG1" firstAttribute="centerX" secondItem="QMv-I8-GOL" secondAttribute="centerX" id="9r8-Zz-blI"/>
+                            <constraint firstItem="KlZ-PW-Toe" firstAttribute="leading" secondItem="JMJ-KB-DGa" secondAttribute="leading" constant="20" id="6ZW-lN-hJa"/>
+                            <constraint firstItem="KlZ-PW-Toe" firstAttribute="top" secondItem="ojY-xi-74f" secondAttribute="bottom" constant="8" id="ITE-69-Cde"/>
+                            <constraint firstItem="Iz0-Us-KWN" firstAttribute="top" secondItem="KlZ-PW-Toe" secondAttribute="bottom" constant="3" id="Noc-6N-pYL"/>
                             <constraint firstItem="ceY-y7-hDU" firstAttribute="top" secondItem="jtx-zF-cRv" secondAttribute="bottom" constant="16" id="Q05-Li-3gO"/>
-                            <constraint firstItem="QMv-I8-GOL" firstAttribute="top" secondItem="ojY-xi-74f" secondAttribute="bottom" constant="8" id="Tra-fd-T21"/>
                             <constraint firstItem="XlU-3p-YO0" firstAttribute="centerX" secondItem="DA1-8T-meq" secondAttribute="centerX" id="V5I-70-xGG"/>
-                            <constraint firstAttribute="trailing" relation="lessThanOrEqual" secondItem="QMv-I8-GOL" secondAttribute="trailing" constant="246" id="Xwv-Hz-VBT"/>
-                            <constraint firstItem="b9m-6D-tG1" firstAttribute="top" secondItem="QMv-I8-GOL" secondAttribute="bottom" constant="8" id="ZVs-k9-bey"/>
                             <constraint firstItem="jtx-zF-cRv" firstAttribute="top" secondItem="HAS-O5-X6j" secondAttribute="bottom" constant="9" id="bGc-qG-uKj"/>
                             <constraint firstItem="HAS-O5-X6j" firstAttribute="leading" secondItem="DA1-8T-meq" secondAttribute="trailing" constant="20" id="bel-1Y-Eit"/>
-                            <constraint firstItem="QMv-I8-GOL" firstAttribute="leading" relation="lessThanOrEqual" secondItem="JMJ-KB-DGa" secondAttribute="leading" constant="247" id="d3p-gb-OUr"/>
                             <constraint firstItem="XlU-3p-YO0" firstAttribute="top" secondItem="DA1-8T-meq" secondAttribute="bottom" constant="8" id="fIx-z9-1VV"/>
                             <constraint firstItem="HAS-O5-X6j" firstAttribute="top" secondItem="DA1-8T-meq" secondAttribute="bottom" constant="-86" id="hLX-f4-kYI"/>
                             <constraint firstItem="XuF-1A-5fe" firstAttribute="top" secondItem="ceY-y7-hDU" secondAttribute="bottom" id="jzb-s4-zeZ"/>
@@ -364,7 +371,7 @@
                             <constraint firstItem="ceY-y7-hDU" firstAttribute="leading" secondItem="JMJ-KB-DGa" secondAttribute="leading" id="mqz-dW-t6Y"/>
                             <constraint firstAttribute="trailing" secondItem="Iz0-Us-KWN" secondAttribute="trailing" constant="10" id="qnH-OL-8Sj"/>
                             <constraint firstItem="jtx-zF-cRv" firstAttribute="centerX" secondItem="JMJ-KB-DGa" secondAttribute="centerX" id="qrs-wo-oiZ"/>
-                            <constraint firstItem="QMv-I8-GOL" firstAttribute="centerX" secondItem="JMJ-KB-DGa" secondAttribute="centerX" id="rtZ-kd-rJG"/>
+                            <constraint firstAttribute="trailing" secondItem="KlZ-PW-Toe" secondAttribute="trailing" constant="20" id="ug5-xY-wHf"/>
                             <constraint firstAttribute="trailing" secondItem="ceY-y7-hDU" secondAttribute="trailing" id="whn-7P-UV8"/>
                         </constraints>
                     </view>

@@ -17,6 +17,7 @@
 		2C2F844E1D8759EB000D7518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F844C1D8759EB000D7518 /* LaunchScreen.storyboard */; };
 		2C2F84591D8759EC000D7518 /* FlightAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84581D8759EC000D7518 /* FlightAppTestTests.m */; };
 		2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */; };
+		2CA224FF1D8F2E6600D2DDB7 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA224FE1D8F2E6600D2DDB7 /* Utils.m */; };
 		2CB36F9B1D8AE6060034B54C /* MTCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F8F1D8AE6060034B54C /* MTCardLayout.m */; };
 		2CB36F9C1D8AE6060034B54C /* MTCardLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F911D8AE6060034B54C /* MTCardLayoutHelper.m */; };
 		2CB36F9D1D8AE6060034B54C /* MTDraggableCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F941D8AE6060034B54C /* MTDraggableCardLayout.m */; };
@@ -72,6 +73,8 @@
 		2C2F845A1D8759EC000D7518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsTableViewCell.h; sourceTree = "<group>"; };
 		2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsTableViewCell.m; sourceTree = "<group>"; };
+		2CA224FD1D8F2E6600D2DDB7 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		2CA224FE1D8F2E6600D2DDB7 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		2CB36F8D1D8AE6060034B54C /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
 		2CB36F8E1D8AE6060034B54C /* MTCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCardLayout.h; sourceTree = "<group>"; };
 		2CB36F8F1D8AE6060034B54C /* MTCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCardLayout.m; sourceTree = "<group>"; };
@@ -211,6 +214,8 @@
 				2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */,
 				2CC131FE1D88959300B62672 /* APIClient.h */,
 				2CC131FF1D88959300B62672 /* APIClient.m */,
+				2CA224FD1D8F2E6600D2DDB7 /* Utils.h */,
+				2CA224FE1D8F2E6600D2DDB7 /* Utils.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -533,6 +538,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2CC132181D889A7600B62672 /* HotelsController.m in Sources */,
+				2CA224FF1D8F2E6600D2DDB7 /* Utils.m in Sources */,
 				2CC132151D889A6E00B62672 /* FlightsController.m in Sources */,
 				2CB36FAC1D8C22320034B54C /* HotelsTableViewController.m in Sources */,
 				2CC132121D889A6400B62672 /* Hotel.m in Sources */,

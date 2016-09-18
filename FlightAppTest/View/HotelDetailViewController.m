@@ -34,8 +34,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self setupView];
-    [self setupSwipeView];
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        [self setupSwipeView];
+    });
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self fillViewComponents];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -45,9 +51,13 @@
 
 #pragma mark - View Helper Methods
 
-- (void)setupView {
-    _name.text = [NSString stringWithFormat:@"%@, %@", _hotel.name, _hotel.hotelLocation];
+- (void)fillViewComponents {
+    _name.text = _hotel.name;
     _hotelDescription.text = _hotel.hotelDescription;
+    
+    //TODO: debug why XIB setting doesn't work itself
+    _hotelDescription.font = [UIFont systemFontOfSize:20.0];
+    
     _location.text = _hotel.hotelLocation;
     _rating.text = [NSString stringWithFormat:@"%li/5", _hotel.rating];
     _pageControl.numberOfPages = _hotel.facilities.count;
@@ -55,7 +65,10 @@
 
 - (void)setupSwipeView {
     if (_hotel.images.count) {
-        [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+        dispatch_sync(dispatch_get_main_queue(), ^{
+            [MBProgressHUD showHUDAddedTo:_imagesContainterSwipeView
+                                 animated:YES];
+        });
         for (int i=0; i<_hotel.images.count; i++) {
             [self fetchImageAtIndex:i];
         }
@@ -73,7 +86,8 @@
                                          [_self.imagesArray addObject:image];
                                          if (index == _hotel.images.count-1) {
                                              [_self.imagesContainterSwipeView reloadData];
-                                             [MBProgressHUD hideHUDForView:_self.view animated:YES];
+                                             [MBProgressHUD hideHUDForView:_self.imagesContainterSwipeView
+                                                                  animated:YES];
                                          }
                                      }
                                  }];
@@ -97,14 +111,12 @@
 
 #pragma mark - UISwipeViewDataSource & Delegate
 
-- (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView
-{
+- (NSInteger)numberOfItemsInSwipeView:(SwipeView *)swipeView {
     //return the total number of items in the carousel
     return _hotel.images.count;
 }
 
-- (UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view
-{
+- (UIView *)swipeView:(SwipeView *)swipeView viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view {
     UIImageView *imageView = nil;
     
     //create new view if no view is available for recycling
@@ -130,8 +142,7 @@
     return view;
 }
 
-- (CGSize)swipeViewItemSize:(SwipeView *)swipeView
-{
+- (CGSize)swipeViewItemSize:(SwipeView *)swipeView {
     return _imagesContainterSwipeView.bounds.size;
 }
 

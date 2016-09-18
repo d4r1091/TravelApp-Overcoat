@@ -12,7 +12,7 @@
 @class Hotel;
 @interface HotelsController : NSObject
 
-+ (void)getHotelsWithCompletionBlock:(void (^)(BOOL, Hotel *, NSError *))completionBlock;
++ (void)getHotelsWithCompletionBlock:(void (^)(BOOL, NSArray*, NSError *))completionBlock;
 
 + (void)getHotelImageWithUrlString:(NSString *)urlString completionBlock:(void (^)(BOOL, UIImage*, NSError *))completion;
 

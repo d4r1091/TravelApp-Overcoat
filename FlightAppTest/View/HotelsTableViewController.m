@@ -11,6 +11,12 @@
 #import "HotelsController.h"
 #import "Hotel.h"
 #import "HotelDetailViewController.h"
+#import "Utils.h"
+
+/*
+ Decided to use a tableview even if the network returns only an Object 
+ not filled in an array. It will could make the view more scalable
+ */
 
 @interface HotelsTableViewController ()
 
@@ -33,12 +39,17 @@
 
 - (void)fetchHotels {
     __block HotelsTableViewController *_self = self;
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [HotelsController getHotelsWithCompletionBlock:^(BOOL success, Hotel *hotel, NSError *error) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        if (!error) {
-            _items = [NSMutableArray arrayWithObject:hotel];
+    [MBProgressHUD showHUDAddedTo:self.view
+                         animated:YES];
+    [HotelsController getHotelsWithCompletionBlock:^(BOOL success, NSArray *hotels, NSError *error) {
+        [MBProgressHUD hideHUDForView:_self.view
+                             animated:YES];
+        if (!error && hotels.count>0) {
+            _items = [NSMutableArray arrayWithArray:hotels];
             [_self.tableView reloadData];
+        } else {
+            [Utils showAlertOnViewController:self
+                                 withMessage:error.localizedDescription];
         }
     }];
 }

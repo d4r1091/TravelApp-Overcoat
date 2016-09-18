@@ -31,17 +31,18 @@
 }
 
 - (void)getFlightsWithCompletionBlock:(void (^)(BOOL, NSArray *, NSError *))completionBlock {
-    [self GET:FlightsEndPoint parameters:nil completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
-        NSArray *flights = ((FlightsModelMapper *)response.result).flights;
-        completionBlock(error==nil, flights, error);
-    }];
+    [self GET:FlightsEndPoint parameters:nil
+   completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
+       NSArray *flights = ((FlightsModelMapper *)response.result).flights;
+       completionBlock(error==nil, flights, error);
+   }];
 }
 
 - (void)getHotelsWithCompletionBlock:(void (^)(BOOL, HotelModelMapper *, NSError *))completionBlock {
     [self GET:HotelsEndPoint parameters:nil completion:^(OVCResponse * _Nullable response, NSError * _Nullable error) {
         HotelModelMapper *hotel = response.result;
         completionBlock(error==nil, hotel, error);
-    }];
+    }];    
 }
 
 + (NSDictionary *)modelClassesByResourcePath {
