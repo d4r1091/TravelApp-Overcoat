@@ -1,7 +1,9 @@
 For this application I used couple of little helps that enhanced my developing time.
 I didn’t got much time to develop a solution as my best, but I used all my spare time to build something acceptable for a test.
+
 What about the Design Pattern, I choose a kind of standard MCV strong divided between sections.
 For the UI, if no one gave me an example and leave to me all the choice about UX+UI, I use to visit pttrns.com to inspire myself about some “topic APPS”.
+
 With the topic “travel and flights” I decided to replace the UX like Passbook (now Apple Wallet).
 What about the helps discussed above, here is the list
 * CocoaPod 
