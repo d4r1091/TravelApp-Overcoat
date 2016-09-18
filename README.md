@@ -5,13 +5,15 @@ What about the Design Pattern, I choose a kind of standard MCV strong divided be
 For the UI, if no one gave me an example and leave to me all the choice about UX+UI, I use to visit pttrns.com to inspire myself about some “topic APPS”.
 
 With the topic “travel and flights” I decided to replace the UX like Passbook (now Apple Wallet).
-What about the helps discussed above, here is the list
-* CocoaPod 
+## What about the helps discussed above, here is the list
++ CocoaPod 
     * MBProgressHUD for a “standard  thinking-UI Object”
     * Overcoat
-        * Mantle for JSON Mapping
-        * AFNetworking for Network Stack
+        1. Mantle for JSON Mapping
+        2. AFNetworking for Network Stack
     * SDWebImage -> Image Download + Caching (not used for lessTime)
 
 Last but not least, versioning is designed to replace a typical commitment by a Client.
 The latest  commits are directly on "develop" due to simulate the "impending" deadline and fast changes with the eye oriented to a "fast-prototyping" project.
+
+###### Thanks, Dario
