@@ -7,13 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0C9A441D87EAE000B6D2BB /* HotelModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */; };
+		2C0C9A451D87EAE000B6D2BB /* FlightModelMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */; };
+		2C0C9A4B1D87EEDC00B6D2BB /* Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */; };
 		2C2F84401D8759EB000D7518 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F843F1D8759EB000D7518 /* main.m */; };
 		2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84421D8759EB000D7518 /* AppDelegate.m */; };
-		2C2F84461D8759EB000D7518 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84451D8759EB000D7518 /* ViewController.m */; };
 		2C2F84491D8759EB000D7518 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F84471D8759EB000D7518 /* Main.storyboard */; };
 		2C2F844B1D8759EB000D7518 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F844A1D8759EB000D7518 /* Assets.xcassets */; };
 		2C2F844E1D8759EB000D7518 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C2F844C1D8759EB000D7518 /* LaunchScreen.storyboard */; };
 		2C2F84591D8759EC000D7518 /* FlightAppTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F84581D8759EC000D7518 /* FlightAppTestTests.m */; };
+		2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */; };
+		2CA224FF1D8F2E6600D2DDB7 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CA224FE1D8F2E6600D2DDB7 /* Utils.m */; };
+		2CB36F9B1D8AE6060034B54C /* MTCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F8F1D8AE6060034B54C /* MTCardLayout.m */; };
+		2CB36F9C1D8AE6060034B54C /* MTCardLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F911D8AE6060034B54C /* MTCardLayoutHelper.m */; };
+		2CB36F9D1D8AE6060034B54C /* MTDraggableCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F941D8AE6060034B54C /* MTDraggableCardLayout.m */; };
+		2CB36F9E1D8AE6060034B54C /* MTDraggableCardLayoutHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F961D8AE6060034B54C /* MTDraggableCardLayoutHelper.m */; };
+		2CB36F9F1D8AE6060034B54C /* UICollectionView+CardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F981D8AE6060034B54C /* UICollectionView+CardLayout.m */; };
+		2CB36FA01D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */; };
+		2CB36FA21D8AE9700034B54C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA11D8AE9700034B54C /* QuartzCore.framework */; };
+		2CB36FA41D8AE9740034B54C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA31D8AE9740034B54C /* UIKit.framework */; };
+		2CB36FA61D8AE9810034B54C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */; };
+		2CB36FA81D8AE9930034B54C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2CB36FA71D8AE9930034B54C /* Foundation.framework */; };
+		2CB36FAC1D8C22320034B54C /* HotelsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */; };
+		2CB36FB41D8C5DDA0034B54C /* HotelDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */; };
+		2CB5D2A61D8C739D00F99D7E /* SwipeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB5D2A51D8C739D00F99D7E /* SwipeView.m */; };
+		2CBD7D851D89FDCE005C7F50 /* FlightsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */; };
+		2CC132001D88959300B62672 /* APIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC131FF1D88959300B62672 /* APIClient.m */; };
+		2CC1320F1D889A5F00B62672 /* Flight.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC1320E1D889A5F00B62672 /* Flight.m */; };
+		2CC132121D889A6400B62672 /* Hotel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132111D889A6400B62672 /* Hotel.m */; };
+		2CC132151D889A6E00B62672 /* FlightsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132141D889A6E00B62672 /* FlightsController.m */; };
+		2CC132181D889A7600B62672 /* HotelsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CC132171D889A7600B62672 /* HotelsController.m */; };
+		2EBDC3B5C9FE4363CB5DE525 /* Pods_FlightAppTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */; };
+		3CEDFE9A01F04BD557DABA8E /* Pods_FlightAppTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +52,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		03AED62710A651BCCDF55985 /* Pods-FlightAppTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest.debug.xcconfig"; sourceTree = "<group>"; };
+		1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightAppTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelModelMapper.m; sourceTree = "<group>"; };
+		2C0C9A411D87EAE000B6D2BB /* HotelModelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelModelMapper.h; sourceTree = "<group>"; };
+		2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightModelMapper.m; sourceTree = "<group>"; };
+		2C0C9A431D87EAE000B6D2BB /* FlightModelMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightModelMapper.h; sourceTree = "<group>"; };
+		2C0C9A491D87EEDC00B6D2BB /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constants.m; sourceTree = "<group>"; };
 		2C2F843B1D8759EB000D7518 /* FlightAppTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlightAppTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F843F1D8759EB000D7518 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C2F84411D8759EB000D7518 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2C2F84421D8759EB000D7518 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2C2F84441D8759EB000D7518 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2C2F84451D8759EB000D7518 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2C2F84481D8759EB000D7518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2C2F844A1D8759EB000D7518 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C2F844D1D8759EB000D7518 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +71,50 @@
 		2C2F84541D8759EC000D7518 /* FlightAppTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FlightAppTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C2F84581D8759EC000D7518 /* FlightAppTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightAppTestTests.m; sourceTree = "<group>"; };
 		2C2F845A1D8759EC000D7518 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsTableViewCell.h; sourceTree = "<group>"; };
+		2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsTableViewCell.m; sourceTree = "<group>"; };
+		2CA224FD1D8F2E6600D2DDB7 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
+		2CA224FE1D8F2E6600D2DDB7 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
+		2CB36F8D1D8AE6060034B54C /* CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardLayout.h; sourceTree = "<group>"; };
+		2CB36F8E1D8AE6060034B54C /* MTCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCardLayout.h; sourceTree = "<group>"; };
+		2CB36F8F1D8AE6060034B54C /* MTCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCardLayout.m; sourceTree = "<group>"; };
+		2CB36F901D8AE6060034B54C /* MTCardLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCardLayoutHelper.h; sourceTree = "<group>"; };
+		2CB36F911D8AE6060034B54C /* MTCardLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTCardLayoutHelper.m; sourceTree = "<group>"; };
+		2CB36F921D8AE6060034B54C /* MTCommonTypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTCommonTypes.h; sourceTree = "<group>"; };
+		2CB36F931D8AE6060034B54C /* MTDraggableCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggableCardLayout.h; sourceTree = "<group>"; };
+		2CB36F941D8AE6060034B54C /* MTDraggableCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggableCardLayout.m; sourceTree = "<group>"; };
+		2CB36F951D8AE6060034B54C /* MTDraggableCardLayoutHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTDraggableCardLayoutHelper.h; sourceTree = "<group>"; };
+		2CB36F961D8AE6060034B54C /* MTDraggableCardLayoutHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTDraggableCardLayoutHelper.m; sourceTree = "<group>"; };
+		2CB36F971D8AE6060034B54C /* UICollectionView+CardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CardLayout.h"; sourceTree = "<group>"; };
+		2CB36F981D8AE6060034B54C /* UICollectionView+CardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CardLayout.m"; sourceTree = "<group>"; };
+		2CB36F991D8AE6060034B54C /* UICollectionView+DraggableCardLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+DraggableCardLayout.h"; sourceTree = "<group>"; };
+		2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+DraggableCardLayout.m"; sourceTree = "<group>"; };
+		2CB36FA11D8AE9700034B54C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		2CB36FA31D8AE9740034B54C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2CB36FA71D8AE9930034B54C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2CB36FAA1D8C22320034B54C /* HotelsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelsTableViewController.h; sourceTree = "<group>"; };
+		2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelsTableViewController.m; sourceTree = "<group>"; };
+		2CB36FB21D8C5DDA0034B54C /* HotelDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelDetailViewController.h; sourceTree = "<group>"; };
+		2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelDetailViewController.m; sourceTree = "<group>"; };
+		2CB5D2A41D8C739D00F99D7E /* SwipeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeView.h; sourceTree = "<group>"; };
+		2CB5D2A51D8C739D00F99D7E /* SwipeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeView.m; sourceTree = "<group>"; };
+		2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightsViewController.h; sourceTree = "<group>"; };
+		2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightsViewController.m; sourceTree = "<group>"; };
+		2CC131FE1D88959300B62672 /* APIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIClient.h; sourceTree = "<group>"; };
+		2CC131FF1D88959300B62672 /* APIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIClient.m; sourceTree = "<group>"; };
+		2CC1320D1D889A5F00B62672 /* Flight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flight.h; sourceTree = "<group>"; };
+		2CC1320E1D889A5F00B62672 /* Flight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Flight.m; sourceTree = "<group>"; };
+		2CC132101D889A6400B62672 /* Hotel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hotel.h; sourceTree = "<group>"; };
+		2CC132111D889A6400B62672 /* Hotel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hotel.m; sourceTree = "<group>"; };
+		2CC132131D889A6E00B62672 /* FlightsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlightsController.h; path = FlightAppTest/Model/FlightsController.h; sourceTree = SOURCE_ROOT; };
+		2CC132141D889A6E00B62672 /* FlightsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlightsController.m; path = FlightAppTest/Model/FlightsController.m; sourceTree = SOURCE_ROOT; };
+		2CC132161D889A7600B62672 /* HotelsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HotelsController.h; path = FlightAppTest/Model/HotelsController.h; sourceTree = SOURCE_ROOT; };
+		2CC132171D889A7600B62672 /* HotelsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = HotelsController.m; path = FlightAppTest/Model/HotelsController.m; sourceTree = SOURCE_ROOT; };
+		329C48E74D0714F4451FDF7C /* Pods-FlightAppTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest.release.xcconfig"; sourceTree = "<group>"; };
+		626939BA05DC8876769C5B7C /* Pods-FlightAppTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTestTests/Pods-FlightAppTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FlightAppTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE40A5DE6E5FA9296092C4D4 /* Pods-FlightAppTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlightAppTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlightAppTestTests/Pods-FlightAppTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +122,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2CB36FA81D8AE9930034B54C /* Foundation.framework in Frameworks */,
+				2CB36FA61D8AE9810034B54C /* CoreGraphics.framework in Frameworks */,
+				2CB36FA41D8AE9740034B54C /* UIKit.framework in Frameworks */,
+				2CB36FA21D8AE9700034B54C /* QuartzCore.framework in Frameworks */,
+				3CEDFE9A01F04BD557DABA8E /* Pods_FlightAppTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2EBDC3B5C9FE4363CB5DE525 /* Pods_FlightAppTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +147,8 @@
 				2C2F843D1D8759EB000D7518 /* FlightAppTest */,
 				2C2F84571D8759EC000D7518 /* FlightAppTestTests */,
 				2C2F843C1D8759EB000D7518 /* Products */,
+				EFAECFE89C69862988C4B879 /* Pods */,
+				62A17A2CD4CEDD1A44938A7D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -83,8 +166,11 @@
 			children = (
 				2C2F84411D8759EB000D7518 /* AppDelegate.h */,
 				2C2F84421D8759EB000D7518 /* AppDelegate.m */,
-				2C2F84441D8759EB000D7518 /* ViewController.h */,
-				2C2F84451D8759EB000D7518 /* ViewController.m */,
+				2C2F84661D875B78000D7518 /* View */,
+				2C2F84691D875B78000D7518 /* Services */,
+				2C2F846B1D875B78000D7518 /* Model */,
+				2C2F846C1D875B78000D7518 /* Controller */,
+				2CB36F8B1D8AE6060034B54C /* ExternalLibraries */,
 				2C2F84471D8759EB000D7518 /* Main.storyboard */,
 				2C2F844A1D8759EB000D7518 /* Assets.xcassets */,
 				2C2F844C1D8759EB000D7518 /* LaunchScreen.storyboard */,
@@ -111,6 +197,147 @@
 			path = FlightAppTestTests;
 			sourceTree = "<group>";
 		};
+		2C2F84661D875B78000D7518 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2CB36FB01D8C25900034B54C /* Flights */,
+				2CB36FB11D8C25960034B54C /* Hotels */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2C2F84691D875B78000D7518 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F846A1D875B78000D7518 /* Model */,
+				2C0C9A491D87EEDC00B6D2BB /* Constants.h */,
+				2C0C9A4A1D87EEDC00B6D2BB /* Constants.m */,
+				2CC131FE1D88959300B62672 /* APIClient.h */,
+				2CC131FF1D88959300B62672 /* APIClient.m */,
+				2CA224FD1D8F2E6600D2DDB7 /* Utils.h */,
+				2CA224FE1D8F2E6600D2DDB7 /* Utils.m */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2C2F846A1D875B78000D7518 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2C0C9A401D87EAE000B6D2BB /* HotelModelMapper.m */,
+				2C0C9A411D87EAE000B6D2BB /* HotelModelMapper.h */,
+				2C0C9A421D87EAE000B6D2BB /* FlightModelMapper.m */,
+				2C0C9A431D87EAE000B6D2BB /* FlightModelMapper.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2F846B1D875B78000D7518 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2CC1320D1D889A5F00B62672 /* Flight.h */,
+				2CC1320E1D889A5F00B62672 /* Flight.m */,
+				2CC132101D889A6400B62672 /* Hotel.h */,
+				2CC132111D889A6400B62672 /* Hotel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2C2F846C1D875B78000D7518 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2CC132131D889A6E00B62672 /* FlightsController.h */,
+				2CC132141D889A6E00B62672 /* FlightsController.m */,
+				2CC132161D889A7600B62672 /* HotelsController.h */,
+				2CC132171D889A7600B62672 /* HotelsController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2CB36F8B1D8AE6060034B54C /* ExternalLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5D2A31D8C739D00F99D7E /* SwipeView */,
+				2CB36F8C1D8AE6060034B54C /* MTCardLayout */,
+			);
+			path = ExternalLibraries;
+			sourceTree = "<group>";
+		};
+		2CB36F8C1D8AE6060034B54C /* MTCardLayout */ = {
+			isa = PBXGroup;
+			children = (
+				2CB36F8D1D8AE6060034B54C /* CardLayout.h */,
+				2CB36F8E1D8AE6060034B54C /* MTCardLayout.h */,
+				2CB36F8F1D8AE6060034B54C /* MTCardLayout.m */,
+				2CB36F901D8AE6060034B54C /* MTCardLayoutHelper.h */,
+				2CB36F911D8AE6060034B54C /* MTCardLayoutHelper.m */,
+				2CB36F921D8AE6060034B54C /* MTCommonTypes.h */,
+				2CB36F931D8AE6060034B54C /* MTDraggableCardLayout.h */,
+				2CB36F941D8AE6060034B54C /* MTDraggableCardLayout.m */,
+				2CB36F951D8AE6060034B54C /* MTDraggableCardLayoutHelper.h */,
+				2CB36F961D8AE6060034B54C /* MTDraggableCardLayoutHelper.m */,
+				2CB36F971D8AE6060034B54C /* UICollectionView+CardLayout.h */,
+				2CB36F981D8AE6060034B54C /* UICollectionView+CardLayout.m */,
+				2CB36F991D8AE6060034B54C /* UICollectionView+DraggableCardLayout.h */,
+				2CB36F9A1D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m */,
+			);
+			path = MTCardLayout;
+			sourceTree = "<group>";
+		};
+		2CB36FB01D8C25900034B54C /* Flights */ = {
+			isa = PBXGroup;
+			children = (
+				2C2F846E1D875B88000D7518 /* FlightsTableViewCell.h */,
+				2C2F846F1D875B88000D7518 /* FlightsTableViewCell.m */,
+				2CBD7D831D89FDCE005C7F50 /* FlightsViewController.h */,
+				2CBD7D841D89FDCE005C7F50 /* FlightsViewController.m */,
+			);
+			name = Flights;
+			sourceTree = "<group>";
+		};
+		2CB36FB11D8C25960034B54C /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				2CB36FAA1D8C22320034B54C /* HotelsTableViewController.h */,
+				2CB36FAB1D8C22320034B54C /* HotelsTableViewController.m */,
+				2CB36FB21D8C5DDA0034B54C /* HotelDetailViewController.h */,
+				2CB36FB31D8C5DDA0034B54C /* HotelDetailViewController.m */,
+			);
+			name = Hotels;
+			sourceTree = "<group>";
+		};
+		2CB5D2A31D8C739D00F99D7E /* SwipeView */ = {
+			isa = PBXGroup;
+			children = (
+				2CB5D2A41D8C739D00F99D7E /* SwipeView.h */,
+				2CB5D2A51D8C739D00F99D7E /* SwipeView.m */,
+			);
+			path = SwipeView;
+			sourceTree = "<group>";
+		};
+		62A17A2CD4CEDD1A44938A7D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2CB36FA71D8AE9930034B54C /* Foundation.framework */,
+				2CB36FA51D8AE9810034B54C /* CoreGraphics.framework */,
+				2CB36FA31D8AE9740034B54C /* UIKit.framework */,
+				2CB36FA11D8AE9700034B54C /* QuartzCore.framework */,
+				926630FC3730DD8CF0807FB9 /* Pods_FlightAppTest.framework */,
+				1C4D7F02960BFCAD5A4066DD /* Pods_FlightAppTestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFAECFE89C69862988C4B879 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				03AED62710A651BCCDF55985 /* Pods-FlightAppTest.debug.xcconfig */,
+				329C48E74D0714F4451FDF7C /* Pods-FlightAppTest.release.xcconfig */,
+				626939BA05DC8876769C5B7C /* Pods-FlightAppTestTests.debug.xcconfig */,
+				FE40A5DE6E5FA9296092C4D4 /* Pods-FlightAppTestTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +345,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2F845D1D8759EC000D7518 /* Build configuration list for PBXNativeTarget "FlightAppTest" */;
 			buildPhases = (
+				19D49DEF0C8D0B0457D2CC20 /* [CP] Check Pods Manifest.lock */,
 				2C2F84371D8759EB000D7518 /* Sources */,
 				2C2F84381D8759EB000D7518 /* Frameworks */,
 				2C2F84391D8759EB000D7518 /* Resources */,
+				3EF4D6ADB6D2CFD9FCB142D2 /* [CP] Embed Pods Frameworks */,
+				D635D875CE2E48149AC52E07 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +365,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C2F84601D8759EC000D7518 /* Build configuration list for PBXNativeTarget "FlightAppTestTests" */;
 			buildPhases = (
+				831F2EFCBFF3F261ACAB05D3 /* [CP] Check Pods Manifest.lock */,
 				2C2F84501D8759EC000D7518 /* Sources */,
 				2C2F84511D8759EC000D7518 /* Frameworks */,
 				2C2F84521D8759EC000D7518 /* Resources */,
+				1D9FDFBE8D91631E48A3DB95 /* [CP] Embed Pods Frameworks */,
+				475C5C2C816A10F07EDC3A9C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,13 +439,125 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19D49DEF0C8D0B0457D2CC20 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1D9FDFBE8D91631E48A3DB95 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightAppTestTests/Pods-FlightAppTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3EF4D6ADB6D2CFD9FCB142D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		475C5C2C816A10F07EDC3A9C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightAppTestTests/Pods-FlightAppTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		831F2EFCBFF3F261ACAB05D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D635D875CE2E48149AC52E07 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlightAppTest/Pods-FlightAppTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2C2F84371D8759EB000D7518 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2C2F84461D8759EB000D7518 /* ViewController.m in Sources */,
+				2CC132181D889A7600B62672 /* HotelsController.m in Sources */,
+				2CA224FF1D8F2E6600D2DDB7 /* Utils.m in Sources */,
+				2CC132151D889A6E00B62672 /* FlightsController.m in Sources */,
+				2CB36FAC1D8C22320034B54C /* HotelsTableViewController.m in Sources */,
+				2CC132121D889A6400B62672 /* Hotel.m in Sources */,
 				2C2F84431D8759EB000D7518 /* AppDelegate.m in Sources */,
+				2C2F84701D875B88000D7518 /* FlightsTableViewCell.m in Sources */,
+				2CB36F9B1D8AE6060034B54C /* MTCardLayout.m in Sources */,
+				2CB36F9D1D8AE6060034B54C /* MTDraggableCardLayout.m in Sources */,
+				2CB36F9C1D8AE6060034B54C /* MTCardLayoutHelper.m in Sources */,
+				2CB5D2A61D8C739D00F99D7E /* SwipeView.m in Sources */,
+				2CB36FA01D8AE6060034B54C /* UICollectionView+DraggableCardLayout.m in Sources */,
+				2CB36F9F1D8AE6060034B54C /* UICollectionView+CardLayout.m in Sources */,
+				2C0C9A4B1D87EEDC00B6D2BB /* Constants.m in Sources */,
+				2CB36FB41D8C5DDA0034B54C /* HotelDetailViewController.m in Sources */,
+				2CBD7D851D89FDCE005C7F50 /* FlightsViewController.m in Sources */,
+				2CB36F9E1D8AE6060034B54C /* MTDraggableCardLayoutHelper.m in Sources */,
+				2CC132001D88959300B62672 /* APIClient.m in Sources */,
+				2CC1320F1D889A5F00B62672 /* Flight.m in Sources */,
+				2C0C9A441D87EAE000B6D2BB /* HotelModelMapper.m in Sources */,
+				2C0C9A451D87EAE000B6D2BB /* FlightModelMapper.m in Sources */,
 				2C2F84401D8759EB000D7518 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,6 +686,7 @@
 		};
 		2C2F845E1D8759EC000D7518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03AED62710A651BCCDF55985 /* Pods-FlightAppTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlightAppTest/Info.plist;
@@ -352,6 +698,7 @@
 		};
 		2C2F845F1D8759EC000D7518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 329C48E74D0714F4451FDF7C /* Pods-FlightAppTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FlightAppTest/Info.plist;
@@ -363,6 +710,7 @@
 		};
 		2C2F84611D8759EC000D7518 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 626939BA05DC8876769C5B7C /* Pods-FlightAppTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FlightAppTestTests/Info.plist;
@@ -375,6 +723,7 @@
 		};
 		2C2F84621D8759EC000D7518 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE40A5DE6E5FA9296092C4D4 /* Pods-FlightAppTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FlightAppTestTests/Info.plist;
@@ -404,6 +753,7 @@
 				2C2F845F1D8759EC000D7518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2C2F84601D8759EC000D7518 /* Build configuration list for PBXNativeTarget "FlightAppTestTests" */ = {
 			isa = XCConfigurationList;
@@ -412,6 +762,7 @@
 				2C2F84621D8759EC000D7518 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

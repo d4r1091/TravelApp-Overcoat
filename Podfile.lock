@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - Mantle (2.0.7):
+    - Mantle/extobjc (= 2.0.7)
+  - Mantle/extobjc (2.0.7)
+  - MBProgressHUD (1.0.0)
+  - Overcoat (4.0.0-beta.2):
+    - AFNetworking/NSURLSession (~> 3.0)
+    - AFNetworking/Serialization (~> 3.0)
+    - Mantle (~> 2.0)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
+
+DEPENDENCIES:
+  - MBProgressHUD (from `https://github.com/jdg/MBProgressHUD.git`)
+  - Overcoat (~> 4.0.0-beta.1)
+  - SDWebImage (~> 3.8)
+
+EXTERNAL SOURCES:
+  MBProgressHUD:
+    :git: https://github.com/jdg/MBProgressHUD.git
+
+CHECKOUT OPTIONS:
+  MBProgressHUD:
+    :commit: 59a8240da67a8c98ac7e77da2fa198d21b1ab03c
+    :git: https://github.com/jdg/MBProgressHUD.git
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Mantle: bc40bb061d8c2c6fb48d5083e04d928c3b7f73d9
+  MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  Overcoat: 2ddaa6d66edebc375f3e24a37974631d5aff7ebe
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
+
+PODFILE CHECKSUM: bb97445f267ad96567bf65756b902ea7910ce8eb
+
+COCOAPODS: 1.0.1
