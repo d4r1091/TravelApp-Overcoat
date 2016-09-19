@@ -16,6 +16,8 @@ With the topic “travel and flights” I decided to replace the UX like Passboo
 Last but not least, versioning is designed to replace a typical commitment by a Client.
 The latest  commits are directly on "develop" due to simulate the "impending" deadline and fast changes with the eye oriented to a "fast-prototyping" project.
 
+In addition, the provided JSON from #pastebin fill the response as Content-Type plain/text that could make difficult to fill the JSON in proper way in terms of parsing a plainText in NSDictionary + NSArray and doesn't work with my provided Library that handle the parsing for me. I moved the JSONs into a free service that's response with the standard Content-Type. 
+
 NB: make a **pod install** on the Project's Root first and open .xcworkspace instead of .xcodeproj then. 
 
 ###### Enjoy, Dario
